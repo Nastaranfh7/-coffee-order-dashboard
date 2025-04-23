@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>داشبورد سفارش قهوه</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>ثبت سفارش قهوه</h1>
+
+  <form id="orderForm">
+    <input type="text" id="customerName" placeholder="نام شما" required>
+    <select id="coffeeType">
+      <option value="">نوع قهوه را انتخاب کنید</option>
+      <option value="espresso">اسپرسو</option>
+      <option value="latte">لاته</option>
+      <option value="cappuccino">کاپوچینو</option>
+    </select>
+    <input type="number" id="quantity" placeholder="تعداد" min="1" required>
+    <button type="submit">ثبت سفارش</button>
+  </form>
+
+  <div id="orderResult"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
